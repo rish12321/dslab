@@ -20,6 +20,7 @@ wssplot <- function(data, nc=15, seed=1234){
     wss[i] <- sum(kmeans(data, centers=i)$withinss)}
   plot(1:nc, wss, type="b", xlab="Number of Clusters",
        ylab="Within groups sum of squares")
+  }
 #wss plot to choose maximum number of clusters
 wssplot(mydata)
 
