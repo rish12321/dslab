@@ -1,7 +1,6 @@
 # Loading data
 setwd("C:/Users/raush/Downloads")  
-dataset = read.transactions('Market_Basket_Optimisation.csv',
-						sep = ', ', rm.duplicates = TRUE)
+dataset = read.transactions('Market_Basket_Optimisation.csv',sep = ',', rm.duplicates = TRUE)
 
 # Structure
 str(dataset)
