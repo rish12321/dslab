@@ -34,4 +34,4 @@ importance(classifier_RF) # Importance plot
 
 varImpPlot(classifier_RF) # Variable importance plot
 
-acc=sum(diag(confusion_mtx)/sum(confusion_mtx)) #accuracy
+acc=sum(diag(confusion_mtx))/sum(confusion_mtx) #accuracy
