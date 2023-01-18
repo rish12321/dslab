@@ -2,11 +2,12 @@ data = read.csv("E:/7th Sem/DSC LAB/income.data_/income.data.csv")
 View(data)
 str(data)
 summary(data)
+
 library(ggplot2)
 library(dplyr)
 library(broom)
 library(ggpubr)
-#hist(data$income)
+
 hist(data$happiness)
 plot(data$income,data$happiness,xlab = "income",ylab = "happiness",main = "income vs happiness scatter plot")
 
