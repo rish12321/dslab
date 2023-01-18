@@ -16,5 +16,5 @@ associa_rules = apriori(data = dataset, parameter = list(support = 0.004, confid
 itemFrequencyPlot(dataset, topN = 10) #Plot
 
 # Visualising the results
-inspect(sort(associa_rules, by = 'lift')[1:10])
+inspect( sort( associa_rules, by = 'lift' )[1:10] )
 plot(associa_rules, method = "graph", measure = "confidence", shading = "lift")
